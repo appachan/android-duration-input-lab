@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 /** パターンごとの画面。name を testTag に使う。 */
 enum class Pattern(val title: String, val content: @Composable (DurationSettings) -> Unit) {
     Dropdowns("1. 時と分の 2 つのドロップダウン", { DropdownsScreen(it) }),
+    SingleList("2. 値をすべて並べた 1 つのリスト", { SingleListScreen(it) }),
 }
 
 class MainActivity : ComponentActivity() {
