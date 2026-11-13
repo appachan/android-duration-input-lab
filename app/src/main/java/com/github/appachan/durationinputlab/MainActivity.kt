@@ -35,6 +35,7 @@ enum class Pattern(val title: String, val content: @Composable (DurationSettings
     SingleList("2. 値をすべて並べた 1 つのリスト", { SingleListScreen(it) }),
     ScrollFieldWheel("3. ホイール（material3 の ScrollField）", { ScrollFieldWheelScreen(it) }),
     CustomWheel("3. ホイール（M2 で自作）", { CustomWheelScreen(it) }),
+    Stepper("4. ステッパー", { StepperScreen(it) }),
 }
 
 class MainActivity : ComponentActivity() {
