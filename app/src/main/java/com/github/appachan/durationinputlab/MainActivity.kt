@@ -33,6 +33,8 @@ import androidx.compose.ui.unit.dp
 enum class Pattern(val title: String, val content: @Composable (DurationSettings) -> Unit) {
     Dropdowns("1. 時と分の 2 つのドロップダウン", { DropdownsScreen(it) }),
     SingleList("2. 値をすべて並べた 1 つのリスト", { SingleListScreen(it) }),
+    ScrollFieldWheel("3. ホイール（material3 の ScrollField）", { ScrollFieldWheelScreen(it) }),
+    CustomWheel("3. ホイール（M2 で自作）", { CustomWheelScreen(it) }),
 }
 
 class MainActivity : ComponentActivity() {
